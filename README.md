@@ -1,2 +1,4 @@
-# go-learning-web
-Web Development w/ Google’s Go (golang) Programming Language
+Learning go
+
+The Complete Developer's Guide (Golang) 
+https://www.udemy.com/course/go-programming-language/
