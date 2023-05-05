@@ -7,9 +7,40 @@
 <body>
 
 {{range .}}
+    <div>
+        <p><b>Year: {{ .AcaYear }}</b></p>
+        
+        {{ if .Spring.Term }}
+            Term: {{ .Fall.Term }}<br/>
+            Courses:
+            <ul>
+            {{range .Fall.Courses}}
+                <li>{{ .Number }}. {{ .Name }} ({{ .Units }})</li>
+            {{end}}
+            </ul>
+        {{end}}
 
-<!-- PUT YOUR CODE HERE TO SHOW THE DATA-->
+        {{ if .Spring.Term }}
+            Term: {{ .Fall.Term }}<br/>
+            Courses:
+            <ul>
+            {{range .Spring.Courses}}
+                <li>{{ .Number }}. {{ .Name }} ({{ .Units }})</li>
+            {{end}}
+            </ul>
+        {{end}}
 
+        {{ if .Summer.Term }}
+            Term: {{ .Fall.Term }}<br/>
+            Courses:
+            <ul>
+            {{range .Summer.Courses}}
+                <li>{{ .Number }}. {{ .Name }} ({{ .Units }})</li>
+            {{end}}
+            </ul>
+        {{end}}
+
+    </div>
 {{end}}
 
 </body>
