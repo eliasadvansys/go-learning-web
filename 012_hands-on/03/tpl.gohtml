@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+{{range .}}
+    <div>
+        <b>{{ .Name }}</b><br/>
+        Address: </b>{{ .Address }}<br/>
+        City: </b>{{ .City }}<br/>
+        Zip: </b>{{ .Zip }}<br/>
+        Region: </b>{{ .Region }}<br/>
+    </div>
+    <br/>
+{{end}}
+
+</body>
+</html>
